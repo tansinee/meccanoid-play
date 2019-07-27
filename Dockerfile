@@ -10,4 +10,5 @@ RUN pip3 install pygatt
 RUN pip3 install jupyterlab
 RUN mkdir -p /workspace/jupyter-notebook
 
-CMD [ "jupyter", "notebook", "--allow-root", "-ip", "0.0.0.0", "--notebook-dir", "/workspace/jupyter-notebook" ]
+
+CMD [ "jupyter", "notebook", "--allow-root", "--ip", "0.0.0.0", "--notebook-dir", "/workspace/jupyter-notebook" ]
